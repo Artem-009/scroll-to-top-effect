@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Эффект скролла страницы</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<img class="ScrollToTop" onclick="toTop()" src="top.png" title="Поднятся наверх">
+	<div class="box">
+		<h1 class="title">Эффект скролла страницы! Как это сделать?</h1>
+		<p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Amet, incidunt, eligendi! Molestiae totam dolor repellat sint provident necessitatibus nisi corporis voluptatum rerum minus? Cum nam ipsum dolor itaque, reprehenderit optio.
+		Pariatur fugiat, repellat velit laboriosam alias ea odit, voluptates aperiam veritatis error accusamus voluptatibus quis tempore optio fuga tempora eius. Asperiores perspiciatis porro, atque reiciendis vero unde saepe excepturi. Assumenda!
+		Distinctio magnam enim recusandae error, repellat, excepturi, accusantium non soluta totam officiis, ut. Asperiores accusamus repudiandae, fuga expedita labore, necessitatibus consequuntur? Voluptatibus ex aliquam ad corrupti est? Vel, recusandae, quidem!
+		Quia dolores qui sapiente dolor maxime excepturi aut sit explicabo, voluptas placeat tempore eligendi beatae aspernatur voluptates earum laboriosam dignissimos nemo eveniet, voluptatem. Ad, vel adipisci eum deserunt libero in?
+		Quasi ab tempora unde vitae voluptates enim repellat dolore fugiat cumque odit id asperiores quisquam nostrum quia accusamus suscipit nam corporis officia dicta, illum dolorum recusandae, deleniti non voluptatibus doloremque.
+		Ea, repellat nihil minus, totam dolor dignissimos ducimus quas dolorem neque laudantium exercitationem corporis quos libero adipisci, commodi illo animi deserunt. Exercitationem tenetur assumenda quibusdam voluptates porro eveniet eius rem?
+		Laborum quaerat, saepe consequuntur aut molestias ad magni dolore expedita voluptas veniam cumque harum id quos vero libero ab provident fuga, sapiente, eius debitis exercitationem. Pariatur quisquam ad nesciunt in.
+		Voluptatibus esse vitae, dolores sint perferendis asperiores iure ducimus. Ex, non! Quasi nobis a quaerat dicta, delectus, amet, aperiam atque doloremque dolorum ipsam natus non exercitationem quos vel vero? Dolor?
+		Blanditiis cumque voluptates, reiciendis consequuntur ducimus! Debitis cum error dolores velit esse culpa, odit illum enim quis est quas aliquid aut provident magnam, similique laboriosam molestiae dolorem sapiente, beatae, dolorum!
+		Illum molestiae, sint fugit nobis fugiat ipsum magnam aut! Neque tempore ducimus nostrum, eum libero a, praesentium quis in, cum non molestiae? In libero totam molestias, iusto quidem possimus ut. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Omnis sapiente aperiam exercitationem expedita sed id doloremque ex, atque reprehenderit alias. Ipsa unde, deleniti mollitia, hic laborum odio corrupti error modi.</p>
+	</div>
+
+	<footer class="footer">
+		<p class="copyrights">&copy Lorem Ipsum <br>That thing designed by Artem_larch</p>
+	</footer>
+
+	  <script>
+		let ScrollToTop = document.querySelector(".ScrollToTop");
+
+		window.onscroll = function() {
+			scroll()
+		};
+
+		function scroll() {
+		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		    ScrollToTop.style.display = "block";
+		  } else {
+		    ScrollToTop.style.display = "none";
+		  }
+		}
+
+		function toTop() {
+		  document.body.scrollTop = 0; // для браузера Safari
+		  document.documentElement.scrollTop = 0; // для остальных браузеров ...
+		}
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	background: #252525;
+	color: #fff;
+	height: 100%;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title{
+	text-align: center;
+}
+
+.text{
+	line-height: 1.6;
+	width: 500px;
+}
+
+.ScrollToTop{
+	display: none;
+	width: 100px;
+	position: fixed;
+	right: 100px;
+	bottom: 30px;
+	cursor: pointer;
+}
+
+.ScrollToTop:hover{
+	opacity: 0.5;
+}
+
+.footer{
+	height: 70px;
+	background: rgba(0,0,0,0.5);
+	line-height: 1.5;
+}
+
+.copyrights{
+	text-align: center;
+	padding-top: 10px;
+}
+
